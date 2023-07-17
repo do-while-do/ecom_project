@@ -1,0 +1,538 @@
+{% load static %}
+{% load head_css_tags %}
+{% load js_scripts_footer %}
+{% load footer_links %}
+
+<!DOCTYPE html>
+<html lang="en" class="wide wow-animation">
+    {% head_css %}
+
+  <body>
+    <!-- Page-->
+    <div class="page text-center">
+      <!-- Page Header-->
+      <header class="page-header">
+        <!-- RD Navbar-->
+        <div class="rd-navbar-wrap">
+          <nav data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fullwidth" data-lg-layout="rd-navbar-static" class="rd-navbar" data-stick-up-offset="50" data-md-layout="rd-navbar-fullwidth">
+            <div class="rd-navbar-toppanel">
+              <div class="rd-navbar-toppanel-inner">
+                <div class="rd-navbar-toppanel-submenu">
+                </div>
+                <div class="rd-navbar-toppanel-wrapper">
+                  <div class="rd-navbar-contact-info">
+                    <p class="text-black text-regular">Call us: <a class='text-black' href='callto:#'>+3(800) 2345-6789</a> <span class='text-black text-light text-italic'>7 Days a week from 9:00 am to 7:00 pm</span></p>
+                  </div>
+                  <div class="rd-navbar-toppanel-search">
+                    <!-- RD Navbar Search-->
+                    <div class="rd-navbar-search-wrap">
+                      <div class="rd-navbar-search">
+                        <form action="search.php" method="GET" class="rd-navbar-search-form">
+                          <label class="rd-navbar-search-form-input">
+                            <input type="text" name="s" placeholder="Search..." autocomplete="off">
+                          </label>
+                          <button type="submit" class="rd-navbar-search-form-submit"></button>
+                          <div data-rd-navbar-toggle=".rd-navbar-search" class="rd-navbar-search-toggle"></div>
+                        </form><span class="rd-navbar-live-search-results"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="rd-navbar-inner">
+              <!-- RD Navbar Panel-->
+              <div class="rd-navbar-panel">
+                <!-- RD Navbar Toggle-->
+                <button data-rd-navbar-toggle=".rd-navbar-nav-wrap" class="rd-navbar-toggle"><span></span></button>
+                <!-- RD Navbar Brand-->
+                <div class="rd-navbar-brand"><a href="/" class="brand-name"><img alt="" src="{% static 'images/logo.png' %}"></a></div>
+                <div class="rd-navbar-elements-wrap text-right">
+                  <ul class="rd-navbar-socials elements-group-18 reveal-inline-block text-middle">
+                    <li><a href="#" class="text-gray icon icon-xs fa-facebook"></a></li>
+                    <li><a href="#" class="text-gray icon icon-xs fa-twitter"></a></li>
+                    <li><a href="#" class="text-gray icon icon-xs fa-google-plus"></a></li>
+                    <li><a href="#" class="text-gray icon icon-xs fa-linkedin"></a></li>
+                    <li><a href="#" class="text-gray icon icon-xs fa-pinterest"></a></li>
+                  </ul>
+                  <div class="rd-navbar-shop text-middle text-left">
+                    <div class="rd-navbar-shop-toggle"><a href="#" data-rd-navbar-toggle=".rd-navbar-shop" class="text-middle icon icon-primary fl-line-icon-set-shopping63"></a><span class="text-middle label label-circle label-primary">1</span></div>
+                    <div class="rd-navbar-shop-panel">
+                      <h4>My Cart</h4>
+                      <div class="unit unit-spacing-15 unit-horizontal rd-navbar-shop-product">
+                        <div class="unit-left"><a href="single-product.html" class="text-dark"><img alt="" src="images/header-01.jpg"></a></div>
+                        <div class="unit-body p"><a href="single-product.html" class="text-dark">Agrafe earrings</a>
+                          <p>4 x <span class="big text-regular text-primary text-spacing-40">$258.89</span></p><a href="#"><span class="rd-navbar-shop-product-delete icon mdi mdi-close"></span></a>
+                        </div>
+                      </div>
+                      <hr class="divider divider-gray divider-offset-20">
+                      <h4>Subtotal: <span class="text-regular text-primary text-normal text-spacing-40">$1,035.56</span></h4><a href="cart.html" class="btn btn-block btn-default">VIEW CART</a><a href="checkout.html" class="btn btn-block btn-primary">CHECKOUT</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="rd-navbar-nav-wrap">
+                <!-- RD Navbar Nav-->
+                <ul class="rd-navbar-nav">
+                  <li class="active"><a href="./">home</a></li>
+                  <li><a href="#about">pages</a>
+                    <!-- RD Navbar Dropdown-->
+                    <ul class="rd-navbar-dropdown">
+                      <li><a href="typography.html">Typography</a></li>
+                      <li><a href="404.html">404</a></li>
+                      <li><a>Blog style</a>
+                        <ul class="rd-navbar-dropdown">
+                          <li><a href="blog-masonry.html">Blog Masonry 3 cols</a></li>
+                          <li><a href="blog-grid.html">Blog Grid 3 cols</a></li>
+                          <li><a href="blog-list.html">Blog Boxed</a></li>
+                        </ul>
+                      </li>
+                      <li><a>Post formats</a>
+                        <ul class="rd-navbar-dropdown">
+                          <li><a href="post-image.html">Image Format</a></li>
+                          <li><a href="post-gallery.html">Gallery Format</a></li>
+                          <li><a href="post-audio.html">Audio Format</a></li>
+                          <li><a href="post-video.html">Video Format</a></li>
+                          <li><a href="post-quote.html">Quote Format</a></li>
+                          <li><a href="post-link.html">Link Format</a></li>
+                          <li><a href="post-aside.html">Aside Format</a></li>
+                        </ul>
+                      </li>
+                      <li><a>Header style</a>
+                        <ul class="rd-navbar-dropdown">
+                          <li><a href="header-variant-1.html">Header style 1</a></li>
+                          <li><a href="header-variant-2.html">Header style 2</a></li>
+                          <li><a href="header-variant-3.html">Header style 3</a></li>
+                        </ul>
+                      </li>
+                      <li><a>Footer style</a>
+                        <ul class="rd-navbar-dropdown">
+                          <li><a href="footer-variant-1.html">Footer style 1</a></li>
+                          <li><a href="footer-variant-2.html">Footer style 2</a></li>
+                          <li><a href="footer-variant-3.html">Footer style 3</a></li>
+                        </ul>
+                      </li>
+                      <li><a>Sidebar style</a>
+                        <ul class="rd-navbar-dropdown">
+                          <li><a href="sidebar-left.html">Sidebar left</a></li>
+                          <li><a href="sidebar-right.html">Sidebar right</a></li>
+                          <li><a href="sidebar-none.html">No sidebar</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li><a href="products.html">Products</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="blog-list.html">Blog</a></li>
+                  <li><a href="contacts.html">Contacts</a></li>
+                  <li class="veil rd-navbar-fixed--visible"><a href="cart.html">Cart</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <!-- Page Content-->
+      <!-- Page Content-->
+      <main class="page-content">
+        <!-- Swiper-->
+        <section data-slide-effect="fade" data-min-height="430px" class="swiper-container swiper-slider">
+          <div class="swiper-wrapper">
+            <div data-slide-bg="{% static 'images/index-01.jpg' %}" class="slide-mobile-overlay swiper-slide">
+              <div class="swiper-slide-caption">
+                <div class="container text-sm-left">
+                  <div class="row">
+                    <div class="col-sm-6 col-sm-offset-6 col-md-5 col-md-offset-7">
+                      <hr data-caption-animate="fadeInLeft" class="divider divider-primary divider-sm-left divider-bold">
+                      <h1 data-caption-delay="100" data-caption-animate="fadeInUp" class="offset-top-30">Turquoise</h1>
+                      <h2 data-caption-delay="600" data-caption-animate="fadeInUp">Lifestyle</h2><a href="category.html" data-caption-delay="900" data-caption-animate="fadeInUp" class="offset-top-45 btn btn-primary">Shop now!</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div data-slide-bg="{% static 'images/index-02.jpg' %}" class="bg-position-left bg-position-center slide-mobile-overlay swiper-slide">
+              <div class="swiper-slide-caption text-sm-left">
+                <div class="container">
+                  <hr data-caption-animate="fadeInDown" class="divider-sm-left divider divider-base divider-bold">
+                  <h1 data-caption-delay="300" data-caption-animate="fadeInUp" class="offset-top-30">Retailer Turquoise:</h1>
+                  <h2 data-caption-delay="300" data-caption-animate="fadeInUp">Brand Store</h2><a href="category.html" data-caption-delay="600" data-caption-animate="fadeInUp" class="offset-top-45 btn btn-primary">Shop now!</a>
+                </div>
+              </div>
+            </div>
+            <div data-slide-bg="{% static 'images/index-03.jpg' %}" class="bg-position-center-sm slide-mobile-overlay swiper-slide">
+              <div class="swiper-slide-caption text-sm-left">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-sm-offset-6 col-sm-6 col-lg-offset-5 col-lg-8">
+                      <hr data-caption-animate="fadeInLeft" class="divider divider-base divider-sm-left divider-bold">
+                      <h1 data-caption-delay="100" data-caption-animate="fadeInUp">Turquoise Lifestory</h1><a data-caption-delay="600" data-caption-animate="fadeInUp" href="category.html" class="offset-top-45 btn btn-primary">Shop now!</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Swiper Navigation-->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <!-- Swiper Pagination-->
+          <div class="swiper-pagination"></div>
+        </section>
+        <section class="section-top-60">
+          <div class="shell">
+            <div class="range">
+              <div class="cell-md-4 cell-sm-6"><a href="category.html" class="thumbnail-variant-4 reveal-inline-block"><img alt="" src="images/index-04.jpg" width="370" height="670" class="img-responsive"></a></div>
+              <div class="cell-md-4 cell-sm-6 cell-md-push-1"><a href="category.html" class="thumbnail-variant-4 reveal-inline-block"><img alt="" src="images/index-07.jpg" width="370" height="670" class="img-responsive"></a></div>
+              <div class="cell-md-4">
+                <div class="range">
+                  <div class="cell-sm-6 cell-md-12"><a href="category.html" class="thumbnail-variant-4 reveal-inline-block inset-md-bottom-7-p"><img alt="" src="images/index-05.jpg" width="370" height="320" class="img-responsive"></a></div>
+                  <div class="cell-sm-6 cell-md-12 offset-top-30 offset-sm-top-0"><a href="category.html" class="thumbnail-variant-4 reveal-inline-block"><img alt="" src="images/index-06.jpg" width="370" height="320" class="img-responsive"></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section-top-60">
+          <div class="shell">
+            <h3>Browse Our Categories</h3>
+            <hr class="divider divider-base divider-bold">
+            <div class="range offset-top-30">
+              <div class="cell-md-3 cell-xs-6"><a href="category.html" class="thumbnail-variant-1"><img alt="" src="images/index-08.jpg" width="270" height="363" class="img-responsive">
+                  <div class="caption">
+                    <h5 class="caption-title">Earrings</h5>
+                    <p class="caption-descr">125 products</p>
+                  </div></a></div>
+              <div class="offset-top-30 offset-xs-top-0 cell-md-3 cell-xs-6"><a href="category.html" class="thumbnail-variant-1"><img alt="" src="images/index-09.jpg" width="270" height="363" class="img-responsive">
+                  <div class="caption">
+                    <h5 class="caption-title">necklaces</h5>
+                    <p class="caption-descr">546 products</p>
+                  </div></a></div>
+              <div class="offset-top-30 offset-md-top-0 cell-md-3 cell-xs-6"><a href="category.html" class="thumbnail-variant-1"><img alt="" src="images/index-10.jpg" width="270" height="363" class="img-responsive">
+                  <div class="caption">
+                    <h5 class="caption-title">brooches</h5>
+                    <p class="caption-descr">25 products</p>
+                  </div></a></div>
+              <div class="offset-top-30 offset-md-top-0 cell-md-3 cell-xs-6"><a href="category.html" class="thumbnail-variant-1"><img alt="" src="images/index-11.jpg" width="270" height="363" class="img-responsive">
+                  <div class="caption">
+                    <h5 class="caption-title">rings</h5>
+                    <p class="caption-descr">72 products</p>
+                  </div></a></div>
+            </div>
+          </div>
+        </section>
+        <section class="section-top-60">
+          <div class="shell">
+            <h3>Weekly Featured Products</h3>
+            <hr class="divider divider-base divider-bold">
+            <!-- Owl Carousel-->
+            <div data-mouse-drag="false" data-autoplay="true" data-md-items="4" data-sm-items="3" data-xs-items="2" data-margin="30" data-nav="true" class="owl-carousel offset-top-30">
+              <div class="product reveal-inline-block">
+                <div class="product-media"><a href="single-product.html"><img alt="" src="images/index-12.jpg" width="290" height="389" class="img-responsive"></a>
+                  <div class="product-overlay"><a href="single-product.html" class="icon icon-circle icon-base fl-line-icon-set-shopping63"></a></div>
+                  <div class="product-overlay-variant-2"><a href="category.html" class="label label-default">Featured</a></div>
+                </div>
+                <div class="offset-top-10">
+                  <p class="big"><a href="single-product.html" class="text-base">6-mm Round Birthstone Stud Earrings</a></p>
+                </div>
+                <div class="product-price text-bold">$258.89</div>
+                <div class="product-actions elements-group-10"><a href="#" class="icon mdi mdi-heart-outline icon-gray icon-sm"></a><a href="#" class="icon mdi mdi-signal icon-gray icon-sm"></a></div>
+              </div>
+              <div class="product reveal-inline-block">
+                <div class="product-media"><a href="single-product.html"><img alt="" src="images/index-13.jpg" width="290" height="389" class="img-responsive"></a>
+                  <div class="product-overlay"><a href="single-product.html" class="icon icon-circle icon-base fl-line-icon-set-shopping63"></a></div>
+                  <div class="product-overlay-variant-2"><a href="category.html" class="label label-default">Featured</a></div>
+                </div>
+                <div class="offset-top-10">
+                  <p class="big"><a href="single-product.html" class="text-base">Love necklace (3 diamonds)</a></p>
+                </div>
+                <div class="product-price text-bold">€127.50</div>
+                <div class="product-rating">
+                  <div><span class="icon icon-xs mdi mdi-star"></span><span class="icon icon-xs mdi mdi-star"></span><span class="icon icon-xs mdi mdi-star"></span><span class="icon icon-xs mdi mdi-star"></span><span class="icon icon-xs mdi mdi-star text-gray-light"></span></div>
+                </div>
+                <div class="product-actions elements-group-10"><a href="#" class="icon mdi mdi-heart-outline icon-gray icon-sm"></a><a href="#" class="icon mdi mdi-signal icon-gray icon-sm"></a></div>
+              </div>
+              <div class="product reveal-inline-block">
+                <div class="product-media"><a href="single-product.html"><img alt="" src="images/index-14.jpg" width="290" height="389" class="img-responsive"></a>
+                  <div class="product-overlay"><a href="single-product.html" class="icon icon-circle icon-base fl-line-icon-set-shopping63"></a></div>
+                  <div class="product-overlay-variant-2">
+                    <div><a href="category.html" class="label label-primary">Sale</a></div>
+                    <!-- Countdown-->
+                    <div data-type="until" data-demo-time="true" data-time="17 Dec 2016 16:00" data-format="hms" class="countdown"></div>
+                  </div>
+                </div>
+                <div class="offset-top-10">
+                  <p class="big"><a href="single-product.html" class="text-base">High Jewelry d&eacute;cor pendant watch</a></p>
+                </div>
+                <div class="product-price text-bold">$258.89</div>
+                <div class="product-actions elements-group-10"><a href="#" class="icon mdi mdi-heart-outline icon-gray icon-sm"></a><a href="#" class="icon mdi mdi-signal icon-gray icon-sm"></a></div>
+              </div>
+              <!-- Product.center-block-->
+              <div class="product reveal-inline-block">
+                <div class="product-media"><a href="single-product.html"><img alt="" src="images/index-15.jpg" width="290" height="389" class="img-responsive"></a>
+                  <div class="product-overlay"><a href="single-product.html" class="icon icon-circle icon-base fl-line-icon-set-shopping63"></a></div>
+                </div>
+                <div class="offset-top-10">
+                  <p class="big"><a href="single-product.html" class="text-base">Amulette de Cartier ring</a></p>
+                </div>
+                <div class="product-price text-bold">$258.89</div>
+                <div class="product-rating">
+                  <div><span class="icon icon-xs mdi mdi-star"></span><span class="icon icon-xs mdi mdi-star"></span><span class="icon icon-xs mdi mdi-star"></span><span class="icon icon-xs mdi mdi-star"></span><span class="icon icon-xs mdi mdi-star text-gray-light"></span></div>
+                </div>
+                <div class="product-actions elements-group-10"><a href="#" class="icon mdi mdi-heart-outline icon-gray icon-sm"></a><a href="#" class="icon mdi mdi-signal icon-gray icon-sm"></a></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="offset-top-45">
+          <div style="background-image: url(images/index-16.jpg); background-repeat: no-repeat; background-size: cover;" class="shell well-variant-1">
+            <h3>About Our Store</h3>
+            <hr class="divider divider-base divider-bold">
+            <p class="text-regular text-uppercase">We are offering you the unique goods because our product is the real treasure.</p>
+            <p class="offset-top-20">If you are a true fan, you’ll love it. We have a tremendous variety in comparison to all of our competitors. Our collection is like a sea pearl among simple stones. Our devoted clients have noticed that our goods are the index of true, elegant taste.</p>
+            <p></p>
+          </div>
+        </section>
+        <section class="section-top-60">
+          <div class="shell">
+            <h3>Our Blog</h3>
+            <hr class="divider divider-base divider-bold">
+            <div data-mouse-drag="false" data-autoplay="true" data-md-items="3" data-sm-items="2" data-xs-items="2" data-margin="30" data-dots="true" data-nav="true" class="owl-mobile-dots owl-nav-md owl-nav-position-top owl-carousel offset-top-30">
+              <div class="blog-post blog-post-grid">
+                <div class="blog-post-media"><a href="blog_single_post.html"><img width="1170" height="854" alt="" src="images/index-17.jpg" class="img-responsive">
+                    <div class="blog-post-caption">
+                      <div class="blog-post-meta-date"><span class='blog-post-meta-date-big reveal-block'>25</span> APR</div>
+                    </div></a></div>
+                <div class="blog-post-meta">
+                  <h5 class="blog-post-meta-title"><a href="blog_single_post.html" class="text-base">Top Five Diamond Jewelry Moments</a></h5>
+                  <p>Posted by <a href='blog-list.html'>Shane Doe</a>  &#8226;  <a href='blog_single_post.html#comments'>25 Comments</a></p>
+                </div>
+                <p>I was recently asked by Diamond Information Center to reminisce about my top five diamond moments in my jewelry career. This task immediately began a lengthy brainstorming session and a trip down memory lane. The Diamond Information Center is a platform for all things ... </p>
+                <div><a href="blog_single_post.html" class="btn btn-link"><span class="btn-text">read more</span></a></div>
+              </div>
+              <div class="blog-post blog-post-grid">
+                <div class="blog-post-media"><a href="blog_single_post.html"><img width="1170" height="854" alt="" src="images/index-18.jpg" class="img-responsive">
+                    <div class="blog-post-caption">
+                      <div class="blog-post-meta-date"><span class='blog-post-meta-date-big reveal-block'>26</span> APR</div>
+                    </div></a></div>
+                <div class="blog-post-meta">
+                  <h5 class="blog-post-meta-title"><a href="blog_single_post.html" class="text-base">Q & A with Onirikka Fine Jewelry</a></h5>
+                  <p>Posted by <a href='blog-list.html'>Shane Doe</a>  &#8226;  <a href='blog_single_post.html#comments'>25 Comments</a></p>
+                </div>
+                <p>Visually caught up in the moment, I stumbled upon Onirikka Fine Jewelry one day while browsing Instagram and immediately got swept up in their feed. I was drawn in by the pops of color given off by the bright bubble gum topazes and quartz gems featured in the Klasica rings ...</p>
+                <div><a href="blog_single_post.html" class="btn btn-link"><span class="btn-text">read more</span></a></div>
+              </div>
+              <div class="blog-post blog-post-grid">
+                <div class="blog-post-media"><a href="blog_single_post.html"><img width="1170" height="854" alt="" src="images/index-19.jpg" class="img-responsive">
+                    <div class="blog-post-caption">
+                      <div class="blog-post-meta-date"><span class='blog-post-meta-date-big reveal-block'>26</span> APR</div>
+                    </div></a></div>
+                <div class="blog-post-meta">
+                  <h5 class="blog-post-meta-title"><a href="blog_single_post.html" class="text-base">Favorite Instagrams: Early Spring 2016</a></h5>
+                  <p>Posted by <a href='blog-list.html'>Shane Doe</a>  &#8226;  <a href='blog_single_post.html#comments'>25 Comments</a></p>
+                </div>
+                <p>We’ve been up since the crack of dawn checking out ALL the coverage in order to bring you the hottest Oscars 2016 red carpet jewellery trends but despite the red eyes and smoking keyboards we have to say it’s been worth the sleepless night ...</p>
+                <div><a href="blog_single_post.html" class="btn btn-link"><span class="btn-text">read more</span></a></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="offset-top-30 offset-md-top-0">
+          <div class="shell">
+            <div class="bg-primary section-60">
+              <!-- Owl Carousel-->
+              <div data-mouse-drag="false" data-items="1" data-drag="false" data-nav="true" data-dots="true" class="owl-nav-center owl-mobile-dots owl-nav-md owl-carousel">
+                <blockquote class="quote quote-variant-1"><img alt="" src="images/index-22.jpg" width="97" height="97" class="img-circle">
+                  <h4 class="offset-top-20">
+                    <q>&#34;I wanted to say thank you for the amazing product and for the fast processing and delivery. It was impressive, you weren't kidding.&#34;</q>
+                  </h4>
+                  <p>
+                    <cite class="text-normal">&#8212; Rebecca Smith</cite>
+                  </p>
+                </blockquote>
+                <blockquote class="quote quote-variant-1"><img alt="" src="images/index-21.jpg" width="97" height="97" class="img-circle">
+                  <h4 class="offset-top-20">
+                    <q>&#34;I loved everything about buying from you! My purchase was carefully packaged and quickly shipped. I was also pleased with great service and delivery times.&#34;</q>
+                  </h4>
+                  <p>
+                    <cite class="text-normal">&#8212; Amanda Cooper</cite>
+                  </p>
+                </blockquote>
+                <blockquote class="quote quote-variant-1"><img alt="" src="images/index-20.jpg" width="97" height="97" class="img-circle">
+                  <h4 class="offset-top-20">
+                    <q>&#34;WOW!!! I have no words! It was a unique and very enjoyable experience. You have such a diverse variety of beautiful products of the highest quality plus superb service.&#34;</q>
+                  </h4>
+                  <p>
+                    <cite class="text-normal">&#8212; Bernard Show</cite>
+                  </p>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section-60">
+          <div class="shell text-left">
+            <div class="range">
+              <div class="cell-md-4">
+                <h3 class="text-center text-sm-left">New Products</h3>
+                <hr class="divider divider-sm-left divider-base divider-bold">
+                <div class="range offset-top-20">
+                  <div class="cell-md-12 cell-sm-4">
+                    <div class="unit unit-horizontal unit-spacing-21">
+                      <div class="unit-left"><a href="single-product.html"><img alt="" src="images/index-23.jpg" width="100" height="100"></a></div>
+                      <div class="unit-body">
+                        <div class="p"><a href="category.html">Earrings</a></div>
+                        <div class="big offset-top-4"><a href="single-product.html" class="text-base">Agrafe earrings</a></div>
+                        <div class="offset-top-4">
+                          <div class="product-price text-bold">$258.89
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cell-md-12 cell-sm-4 offset-md-top-30">
+                    <div class="unit unit-horizontal unit-spacing-21">
+                      <div class="unit-left"><a href="single-product.html"><img alt="" src="images/index-24.jpg" width="100" height="100"></a></div>
+                      <div class="unit-body">
+                        <div class="p"><a href="category.html">Necklaces</a></div>
+                        <div class="big offset-top-4"><a href="single-product.html" class="text-base">Amulette de Cartier necklace</a></div>
+                        <div class="offset-top-4">
+                          <div class="product-price text-bold">$258.89
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cell-md-12 cell-sm-4 offset-md-top-30">
+                    <div class="unit unit-horizontal unit-spacing-21">
+                      <div class="unit-left"><a href="single-product.html"><img alt="" src="images/index-25.jpg" width="100" height="100"></a></div>
+                      <div class="unit-body">
+                        <div class="p"><a href="category.html">Brooches</a></div>
+                        <div class="big offset-top-4"><a href="single-product.html" class="text-base">Cartier Fauna and Flora brooch</a></div>
+                        <div class="offset-top-4">
+                          <div class="product-price text-bold">$258.89
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="cell-md-4 offset-top-45 offset-md-top-0">
+                <h3 class="text-center text-sm-left">On Sale</h3>
+                <hr class="divider divider-sm-left divider-base divider-bold">
+                <div class="range offset-top-20">
+                  <div class="cell-md-12 cell-sm-4">
+                    <div class="unit unit-horizontal unit-spacing-21">
+                      <div class="unit-left"><a href="single-product.html"><img alt="" src="images/index-26.jpg" width="100" height="100"></a></div>
+                      <div class="unit-body">
+                        <div class="p"><a href="category.html">Rings</a></div>
+                        <div class="big offset-top-4"><a href="single-product.html" class="text-base">Engagement ring</a></div>
+                        <div class="offset-top-4">
+                          <div class="product-price text-bold">$258.89 <span class='text-spacing-0 text-light text-muted text-strike small'>$278.96</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cell-md-12 cell-sm-4 offset-md-top-30">
+                    <div class="unit unit-horizontal unit-spacing-21">
+                      <div class="unit-left"><a href="single-product.html"><img alt="" src="images/index-27.jpg" width="100" height="100"></a></div>
+                      <div class="unit-body">
+                        <div class="p"><a href="category.html">Earrings</a></div>
+                        <div class="big offset-top-4"><a href="single-product.html" class="text-base">6-mm Round Birthstone Stud Earrings </a></div>
+                        <div class="offset-top-4">
+                          <div class="product-price text-bold">$258.89 <span class='text-spacing-0 text-light text-muted text-strike small'>$278.96</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cell-md-12 cell-sm-4 offset-md-top-30">
+                    <div class="unit unit-horizontal unit-spacing-21">
+                      <div class="unit-left"><a href="single-product.html"><img alt="" src="images/index-28.jpg" width="100" height="100"></a></div>
+                      <div class="unit-body">
+                        <div class="p"><a href="category.html">Watches</a></div>
+                        <div class="big offset-top-4"><a href="single-product.html" class="text-base">High Jewelry watch 18K diamonds pearls onyx emeralds</a></div>
+                        <div class="offset-top-4">
+                          <div class="product-price text-bold">$258.89 <span class='text-spacing-0 text-light text-muted text-strike small'>$278.96</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="cell-md-4 offset-top-45 offset-md-top-0">
+                <h3 class="text-center text-sm-left">Top Rated Products</h3>
+                <hr class="divider divider-sm-left divider-base divider-bold">
+                <div class="range offset-top-20">
+                  <div class="cell-md-12 cell-sm-4">
+                    <div class="unit unit-horizontal unit-spacing-21">
+                      <div class="unit-left"><a href="single-product.html"><img alt="" src="images/index-29.jpg" width="100" height="100"></a></div>
+                      <div class="unit-body">
+                        <div class="p"><a href="category.html">Rings</a></div>
+                        <div class="big offset-top-4"><a href="single-product.html" class="text-base">Amulette de Cartier long necklace </a></div>
+                        <div class="offset-top-4">
+                          <div class="product-price text-bold">$258.89
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cell-md-12 cell-sm-4 offset-md-top-30">
+                    <div class="unit unit-horizontal unit-spacing-21">
+                      <div class="unit-left"><a href="single-product.html"><img alt="" src="images/index-30.jpg" width="100" height="100"></a></div>
+                      <div class="unit-body">
+                        <div class="p"><a href="category.html">Rings</a></div>
+                        <div class="big offset-top-4"><a href="single-product.html" class="text-base">Floral Vine Teardrop Natural Shell .925 Silver Earrings</a></div>
+                        <div class="offset-top-4">
+                          <div class="product-price text-bold">$258.89
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cell-md-12 cell-sm-4 offset-md-top-30">
+                    <div class="unit unit-horizontal unit-spacing-21">
+                      <div class="unit-left"><a href="single-product.html"><img alt="" src="images/index-31.jpg" width="100" height="100"></a></div>
+                      <div class="unit-body">
+                        <div class="p"><a href="category.html">Earrings</a></div>
+                        <div class="big offset-top-4"><a href="single-product.html" class="text-base">6-mm Round Birthstone Stud Earrings </a></div>
+                        <div class="offset-top-4">
+                          <div class="product-price text-bold">$258.89
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section-bottom-60">
+          <div class="shell">
+            <div class="well">
+              <h4>Get latest news delivered daily!</h4>
+              <p class="offset-top-10">We will send you breaking news right to your inbox</p>
+              <!-- Rd Mailform result field-->
+              <div class="rd-mailform-validate"></div>
+              <!-- RD Mailform-->
+              <form data-result-class="rd-mailform-validate" data-form-type="contact" method="post" action="bat/rd-mailform.php" class="offset-top-10 form-inline-flex reveal-xs-flex rd-mailform">
+                <div class="form-group">
+                  <input type="text" name="email" data-constraints="@NotEmpty @Email" placeholder="Enter your e-mail" class="form-control">
+                </div>
+                <button type="submit" class="btn btn-primary offset-top-0">Subscribe</button>
+              </form>
+            </div>
+          </div>
+        </section>
+      </main>
+      <!-- Page Footer-->
+        {% footer_links %}
+    </div>
+    <!-- Java script-->
+    {% js_scripts_footer %}
+  </body>
+</html>
