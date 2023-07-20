@@ -1,0 +1,39 @@
+version: '3.4'
+services:
+  web:
+    image: dowhiledo/ecom_project
+    build: . #path to the build image it will use the docker file
+    command: gunicorn --bind=0.0.0.0:8000  ecom_project.wsgi:application
+    ports:
+      - "8000:8000"
+    env_file:
+      - ./envs/.env.prod
+    volumes:
+      - /tmp/ecom_project/static:/app/static
+    depends_on:
+      - postgres_db
+#    container_name: web_ecom_project_container_prod
+  postgres_db:
+    image: postgres
+    restart: always
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_PASSWORD: 123456789
+      POSTGRES_USER: postgres-user
+      POSTGRES_DB: ecom_db
+      PDATA: /var/lib/postgresql/data/pgdata
+#    container_name: postgres_ecom_project
+    volumes:
+      - ./postgresql:/var/lib/postgresql/data
+  nginx:
+    image: nginx
+    ports:
+      - "81:80"
+      - "443:443"
+    volumes:
+      - /tmp/ecom_project/static:/home/app/web/staticfiles
+      - ./nginx/conf.d:/etc/nginx/conf.d
+      - ./nginx/logs:/var/log/nginx
+#      - ./certbot/www:/var/www/certbot/:ro
+#      - ./certbot/conf/:/etc/nginx/ssl/:ro
